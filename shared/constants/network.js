@@ -5,6 +5,7 @@ export const RINKEBY = 'rinkeby';
 export const KOVAN = 'kovan';
 export const MAINNET = 'mainnet';
 export const GOERLI = 'goerli';
+export const COOL = 'cool';
 export const LOCALHOST = 'localhost';
 export const NETWORK_TYPE_RPC = 'rpc';
 
@@ -13,9 +14,11 @@ export const ROPSTEN_NETWORK_ID = '3';
 export const RINKEBY_NETWORK_ID = '4';
 export const GOERLI_NETWORK_ID = '5';
 export const KOVAN_NETWORK_ID = '42';
+export const COOL_NETWORK_ID = '102933';
 export const LOCALHOST_NETWORK_ID = '1337';
 
 export const MAINNET_CHAIN_ID = '0x1';
+export const COOL_CHAIN_ID = '0x19215';
 export const ROPSTEN_CHAIN_ID = '0x3';
 export const RINKEBY_CHAIN_ID = '0x4';
 export const GOERLI_CHAIN_ID = '0x5';
@@ -43,6 +46,7 @@ export const RINKEBY_DISPLAY_NAME = 'Rinkeby';
 export const KOVAN_DISPLAY_NAME = 'Kovan';
 export const MAINNET_DISPLAY_NAME = 'Ethereum Mainnet';
 export const GOERLI_DISPLAY_NAME = 'Goerli';
+export const COOL_DISPLAY_NAME = 'Cool Mainnet';
 export const LOCALHOST_DISPLAY_NAME = 'Localhost 8545';
 export const BSC_DISPLAY_NAME = 'Binance Smart Chain';
 export const POLYGON_DISPLAY_NAME = 'Polygon';
@@ -63,6 +67,7 @@ export const ROPSTEN_RPC_URL = getRpcUrl({ network: ROPSTEN });
 export const RINKEBY_RPC_URL = getRpcUrl({ network: RINKEBY });
 export const KOVAN_RPC_URL = getRpcUrl({ network: KOVAN });
 export const MAINNET_RPC_URL = getRpcUrl({ network: MAINNET });
+export const COOL_RPC_URL = 'http://use.cool';
 export const GOERLI_RPC_URL = getRpcUrl({ network: GOERLI });
 export const LOCALHOST_RPC_URL = 'http://localhost:8545';
 
@@ -70,6 +75,7 @@ export const ETH_SYMBOL = 'ETH';
 export const WETH_SYMBOL = 'WETH';
 export const TEST_ETH_SYMBOL = 'TESTETH';
 export const BNB_SYMBOL = 'BNB';
+export const COOL_SYMBOL = 'COOL';
 export const MATIC_SYMBOL = 'MATIC';
 export const AVALANCHE_SYMBOL = 'AVAX';
 export const FANTOM_SYMBOL = 'FTM';
@@ -81,6 +87,7 @@ export const PALM_SYMBOL = 'PALM';
 export const ETH_TOKEN_IMAGE_URL = './images/eth_logo.svg';
 export const TEST_ETH_TOKEN_IMAGE_URL = './images/black-eth-logo.svg';
 export const BNB_TOKEN_IMAGE_URL = './images/bnb.png';
+export const COOL_TOKEN_IMAGE_URL = './images/palm.svg';
 export const MATIC_TOKEN_IMAGE_URL = './images/matic-token.png';
 export const AVAX_TOKEN_IMAGE_URL = './images/avax-token.png';
 export const AETH_TOKEN_IMAGE_URL = './images/arbitrum.svg';
@@ -130,6 +137,10 @@ export const NETWORK_TYPE_TO_ID_MAP = {
     chainId: GOERLI_CHAIN_ID,
     ticker: TEST_NETWORK_TICKER_MAP[GOERLI],
   },
+  [COOL]: {
+    networkId: COOL_NETWORK_ID,
+    chainId: COOL_CHAIN_ID,
+  },
   [MAINNET]: {
     networkId: MAINNET_NETWORK_ID,
     chainId: MAINNET_CHAIN_ID,
@@ -145,6 +156,7 @@ export const NETWORK_TO_NAME_MAP = {
   [RINKEBY]: RINKEBY_DISPLAY_NAME,
   [KOVAN]: KOVAN_DISPLAY_NAME,
   [MAINNET]: MAINNET_DISPLAY_NAME,
+  [COOL]: COOL_DISPLAY_NAME,
   [GOERLI]: GOERLI_DISPLAY_NAME,
   [LOCALHOST]: LOCALHOST_DISPLAY_NAME,
 
@@ -153,6 +165,7 @@ export const NETWORK_TO_NAME_MAP = {
   [KOVAN_NETWORK_ID]: KOVAN_DISPLAY_NAME,
   [GOERLI_NETWORK_ID]: GOERLI_DISPLAY_NAME,
   [MAINNET_NETWORK_ID]: MAINNET_DISPLAY_NAME,
+  [COOL_NETWORK_ID]: COOL_DISPLAY_NAME,
   [LOCALHOST_NETWORK_ID]: LOCALHOST_DISPLAY_NAME,
 
   [ROPSTEN_CHAIN_ID]: ROPSTEN_DISPLAY_NAME,
@@ -160,6 +173,7 @@ export const NETWORK_TO_NAME_MAP = {
   [KOVAN_CHAIN_ID]: KOVAN_DISPLAY_NAME,
   [GOERLI_CHAIN_ID]: GOERLI_DISPLAY_NAME,
   [MAINNET_CHAIN_ID]: MAINNET_DISPLAY_NAME,
+  [COOL_CHAIN_ID]: COOL_DISPLAY_NAME,
   [LOCALHOST_CHAIN_ID]: LOCALHOST_DISPLAY_NAME,
 };
 
@@ -176,6 +190,7 @@ export const CHAIN_ID_TO_RPC_URL_MAP = {
   [KOVAN_CHAIN_ID]: KOVAN_RPC_URL,
   [GOERLI_CHAIN_ID]: GOERLI_RPC_URL,
   [MAINNET_CHAIN_ID]: MAINNET_RPC_URL,
+  [COOL_CHAIN_ID]: COOL_RPC_URL,
   [LOCALHOST_CHAIN_ID]: LOCALHOST_RPC_URL,
 };
 

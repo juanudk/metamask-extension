@@ -9,12 +9,22 @@ import {
   RINKEBY_CHAIN_ID,
   ROPSTEN,
   ROPSTEN_CHAIN_ID,
+  COOL_RPC_URL,
   getRpcUrl,
   ETH_SYMBOL,
   TEST_NETWORK_TICKER_MAP,
 } from '../../../../shared/constants/network';
 
 const defaultNetworksData = [
+  {
+    labelKey: COOL,
+    iconColor: '#29B6AF',
+    providerType: COOL,
+    rpcUrl: COOL_RPC_URL,
+    chainId: COOL_CHAIN_ID,
+    ticker: ETH_SYMBOL,
+    blockExplorerUrl: 'https://etherscan.io',
+  },
   {
     labelKey: MAINNET,
     iconColor: '#29B6AF',
